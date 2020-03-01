@@ -1,0 +1,58 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 6.3rem);
+  color: white;
+  background-color: black;
+  padding: 0 4rem;
+
+  &__main {
+    font-size: 4.5rem;
+
+    &--name {
+      color: rgb(249, 255, 63);
+    }
+  }
+
+  &__secondary {
+    font-size: 3rem;
+    margin-top: 3rem;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 3rem;
+    padding: 1.5rem 2rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+      rgba(249, 255, 63, 0.6) 50%,
+      rgba(249, 255, 63, 0) 50%
+    );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.4s ease;
+
+    &__text {
+      font-size: 1.8rem;
+    }
+
+    &__icon {
+      width: 2rem;
+      margin-left: 1rem;
+      transition: all 0.4s ease;
+    }
+
+    &:hover {
+      background-position: left bottom;
+      .title__btn__icon {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
