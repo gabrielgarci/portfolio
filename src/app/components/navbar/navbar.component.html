@@ -1,0 +1,30 @@
+<div class="navbar">
+  <div class="logo">Gabriel</div>
+  <div class="links">
+    <div class="links__item">Link</div>
+    <div class="links__item">Link</div>
+    <div class="links__item">Link</div>
+  </div>
+  <div class="responsive-menu">
+    <img
+      class="responsive-menu__btn"
+      src="./assets/icons/menu.svg"
+      alt="menu"
+      *ngIf="showMenu === false"
+      (click)="showMenu = true"
+    />
+    <img
+      class="responsive-menu__btn responsive-menu__btn--close"
+      src="./assets/icons/close.svg"
+      alt="close"
+      *ngIf="showMenu"
+      (click)="showMenu = false"
+    />
+    <div class="responsive-menu__links" *ngIf="showMenu" [@appearMenu]>
+      <div class="responsive-menu__links__item">Link</div>
+      <div class="responsive-menu__links__item">Link</div>
+      <div class="responsive-menu__links__item">Link</div>
+      <div class="responsive-menu__links__item">Link</div>
+    </div>
+  </div>
+</div>

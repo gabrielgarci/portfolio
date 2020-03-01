@@ -8,11 +8,12 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng build --prod --base-href 'http://gabrielgarci.github.io/portfolio/' && npx ngh --dir=dist/portfolio"
+    "deploy": "ng build --prod --base-href https://gabrielgarci.github.io/portfolio/ && npx ngh --dir=dist/portfolio"
   },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.0.2",
+    "@angular/cdk": "^9.1.0",
     "@angular/common": "~9.0.2",
     "@angular/compiler": "~9.0.2",
     "@angular/core": "~9.0.2",
