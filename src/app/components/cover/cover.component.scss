@@ -3,13 +3,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100vh - 6.3rem);
+  height: calc(100vh - 6.2rem);
   color: white;
   background-color: black;
   padding: 0 4rem;
+  visibility: h;
 
   &__main {
     font-size: 4.5rem;
+    opacity: 0;
+    animation: fade-in 0.5s linear 1s forwards;
 
     &--name {
       color: rgb(249, 255, 63);
@@ -19,6 +22,8 @@
   &__secondary {
     font-size: 3rem;
     margin-top: 3rem;
+    opacity: 0;
+    animation: fade-in 0.5s linear 2s forwards;
   }
 
   &__btn {
@@ -31,12 +36,14 @@
     cursor: pointer;
     background: linear-gradient(
       to right,
-      rgba(249, 255, 63, 0.6) 50%,
+      rgba(249, 255, 63, 0.5) 50%,
       rgba(249, 255, 63, 0) 50%
     );
     background-size: 200% 100%;
     background-position: right bottom;
     transition: all 0.4s ease;
+    opacity: 0;
+    animation: fade-in 0.5s linear 3s forwards;
 
     &__text {
       font-size: 1.8rem;
@@ -54,5 +61,14 @@
         transform: rotate(90deg);
       }
     }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
