@@ -3,15 +3,12 @@
 </div>
 <div class="summary">
   <img class="summary__pic" src="/assets/img/portrait.jpg" alt="portrait" />
-  <div class="summary__stats">
-    <div class="skill" *ngFor="let skill of skills">
-      <div class="skill__name">{{ skill.name }}</div>
-      <div class="skill__bar">
-        <div
-          class="skill__score"
-          [ngStyle]="{ width: (skill.score / 100) * 300 + 'px' }"
-        ></div>
-      </div>
-    </div>
+  <div class="summary__stats" (deferLoad)="showMyElement = true">
+    <app-skill-stat
+      class="skill"
+      *ngFor="let skill of skills; index as i"
+      [item]="skill"
+      [index]="i"
+    ></app-skill-stat>
   </div>
 </div>

@@ -31,28 +31,4 @@
 .skill {
   display: flex;
   margin: 1rem 0;
-
-  &__name {
-    width: 100px;
-    padding: 0.75rem 0;
-    font-size: 1.5rem;
-    text-align: center;
-    text-transform: uppercase;
-    background-color: rgb(158, 158, 158);
-    border-radius: 10px 0 0 10px;
-  }
-
-  &__bar {
-    display: flex;
-    width: 100%;
-    max-width: 300px;
-    background-color: rgb(219, 219, 219);
-    border-radius: 0 10px 10px 0;
-  }
-
-  &__score {
-    background-color: #c1e63b;
-    border-radius: 0 10px 10px 0;
-    height: 100%;
-  }
 }
