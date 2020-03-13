@@ -11,7 +11,7 @@
   &__main {
     font-size: 4.5rem;
     opacity: 0;
-    animation: fade-in 0.5s linear 1s forwards;
+    animation: fade-in 0.5s linear 0.75s forwards;
     text-align: center;
 
     &--name {
@@ -23,7 +23,7 @@
     font-size: 3rem;
     margin-top: 3rem;
     opacity: 0;
-    animation: fade-in 0.5s linear 2s forwards;
+    animation: fade-in 0.5s linear 1.5s forwards;
   }
 
   &__btn {
@@ -43,7 +43,7 @@
     background-position: right bottom;
     transition: all 0.4s ease;
     opacity: 0;
-    animation: fade-in 0.5s linear 3s forwards;
+    animation: fade-in 0.5s linear 2.25s forwards;
 
     &__text {
       font-size: 1.8rem;

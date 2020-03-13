@@ -3,12 +3,13 @@
 </div>
 <div class="summary">
   <img class="summary__pic" src="/assets/img/portrait.jpg" alt="portrait" />
-  <div class="summary__stats" (deferLoad)="showMyElement = true">
+  <div class="summary__stats" (intersection)="loadStats = true">
     <app-skill-stat
       class="skill"
       *ngFor="let skill of skills; index as i"
       [item]="skill"
       [index]="i"
+      [loadStats]="loadStats"
     ></app-skill-stat>
   </div>
 </div>

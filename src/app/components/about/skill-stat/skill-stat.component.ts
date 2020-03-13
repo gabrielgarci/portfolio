@@ -8,8 +8,11 @@ import { Component, OnInit, Input } from '@angular/core'
 export class SkillStatComponent implements OnInit {
   @Input() item
   @Input() index
+  @Input() loadStats
 
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    // setInterval(()=> console.log(this.loadStats), 500)
+  }
 }

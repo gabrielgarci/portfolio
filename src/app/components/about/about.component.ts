@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core'
 import { Skill } from 'src/app/models/about'
+import { IntersectionDirective } from 'src/app/directives/intersection.directive'
 
 @Component({
   selector: 'app-about',
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
 })
-export class AboutComponent implements OnInit {
-  public showMyElement = false
+export class AboutComponent {
+  public loadStats = false
 
   public skills: Skill[] = [
     { name: 'CSS', score: 80 },
@@ -19,6 +20,4 @@ export class AboutComponent implements OnInit {
   ]
 
   constructor() {}
-
-  ngOnInit(): void {}
 }

@@ -21,8 +21,7 @@
     background-position: right bottom;
     border-radius: 0 10px 10px 0;
     height: 100%;
-    transition: all 0.6s ease;
-    &:hover {
+    &--loaded {
       background-position: left bottom;
     }
   }
