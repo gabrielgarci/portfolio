@@ -12,7 +12,5 @@ export class SkillStatComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit(): void {
-    // setInterval(()=> console.log(this.loadStats), 500)
-  }
+  ngOnInit(): void {}
 }
