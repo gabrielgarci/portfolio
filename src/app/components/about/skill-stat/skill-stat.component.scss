@@ -1,5 +1,6 @@
 .title {
   width: 100px;
+  min-width: 80px;
   padding: 0.75rem 0;
   font-size: 1.5rem;
   text-align: center;
@@ -11,7 +12,6 @@
 .bar {
   display: flex;
   width: 100%;
-  max-width: 300px;
   background-color: rgb(219, 219, 219);
   border-radius: 0 10px 10px 0;
 
