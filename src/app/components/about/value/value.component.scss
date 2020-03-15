@@ -1,0 +1,33 @@
+.value {
+  width: 200px;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 175px;
+    width: 175px;
+    border-radius: 150px;
+    background-color: white;
+
+    > img {
+      width: 125px;
+      filter: invert(0.25);
+    }
+  }
+
+  &__title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: #424242;
+  }
+
+  &__descript {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #575757;
+    line-height: 2rem;
+  }
+}

@@ -13,3 +13,12 @@
     ></app-skill-stat>
   </div>
 </div>
+<div class="values" (intersection)="loadValues = true">
+  <app-value
+    class="values__item"
+    *ngFor="let value of values; index as i"
+    [ngClass]="{ 'values__item--loaded': loadValues }"
+    [ngStyle]="{ transition: 'all 0.5s ease ' + getDelay(i) + 's' }"
+    [item]="value"
+  ></app-value>
+</div>

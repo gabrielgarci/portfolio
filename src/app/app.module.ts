@@ -8,6 +8,7 @@ import { NavbarComponent } from './components/navbar/navbar.component'
 import { AboutComponent } from './components/about/about.component'
 import { SkillStatComponent } from './components/about/skill-stat/skill-stat.component'
 import { IntersectionDirective } from './directives/intersection.directive'
+import { ValueComponent } from './components/about/value/value.component'
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { IntersectionDirective } from './directives/intersection.directive'
     AboutComponent,
     SkillStatComponent,
     IntersectionDirective,
+    ValueComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],

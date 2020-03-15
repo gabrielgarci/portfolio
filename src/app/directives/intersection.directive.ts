@@ -8,6 +8,8 @@ export class IntersectionDirective implements AfterViewInit {
   @Output() public intersection: EventEmitter<any> = new EventEmitter()
 
   private _intersectionObserver?: IntersectionObserver
+  private _biggerThanScreen: boolean
+  private _options: {}
 
   constructor(private _element: ElementRef) {}
 
@@ -32,10 +34,21 @@ export class IntersectionDirective implements AfterViewInit {
     )
   }
 
+  private fixForSmallDevices() {
+    this._biggerThanScreen =
+      this._element.nativeElement.clientHeight > window.innerHeight
+        ? true
+        : false
+    this._options = {
+      threshold: this._biggerThanScreen ? 0.2 : 0.75,
+    }
+  }
+
   public ngAfterViewInit() {
     this._intersectionObserver = new IntersectionObserver(entries => {
+      this.fixForSmallDevices()
       this.checkForIntersection(entries)
-    }, {})
+    }, this._options)
     this._intersectionObserver.observe(this._element.nativeElement as Element)
   }
 }
