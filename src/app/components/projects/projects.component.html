@@ -1,3 +1,13 @@
 <div class="title">
-  <h1 class="title__text">Projects</h1>
+  <h1 class="title__text">Proyectos</h1>
+</div>
+<div class="colaborations">
+  <div class="subtitle">
+    <h1 class="subtitle__text">Colaboraciones</h1>
+  </div>
+  <app-colaboration-card
+    class="colaboration__item"
+    *ngFor="let colaboration of colaborations"
+    [item]="colaboration"
+  ></app-colaboration-card>
 </div>

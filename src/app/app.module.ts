@@ -11,6 +11,7 @@ import { IntersectionDirective } from './directives/intersection.directive'
 import { ValueComponent } from './components/about/value/value.component'
 import { ProjectsComponent } from './components/projects/projects.component'
 import { ProjectCardComponent } from './components/projects/project-card/project-card.component'
+import { ColaborationCardComponent } from './components/projects/colaboration-card/colaboration-card.component'
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { ProjectCardComponent } from './components/projects/project-card/project
     ValueComponent,
     ProjectsComponent,
     ProjectCardComponent,
+    ColaborationCardComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],

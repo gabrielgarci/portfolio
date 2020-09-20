@@ -1,0 +1,13 @@
+<div class="colaboration-card">
+  <div class="colaboration-card__main">
+    <div class="colaboration-card__title">{{ item.company }}</div>
+    <div class="colaboration-card__tags">
+      <div class="colaboration-card__tag" *ngFor="let tag of item.tags">
+        {{ tag }}
+      </div>
+    </div>
+  </div>
+  <div class="colaboration-card__description text">
+    {{ item.description }}
+  </div>
+</div>
