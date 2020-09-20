@@ -10,6 +10,7 @@ import { SkillStatComponent } from './components/about/skill-stat/skill-stat.com
 import { IntersectionDirective } from './directives/intersection.directive'
 import { ValueComponent } from './components/about/value/value.component'
 import { ProjectsComponent } from './components/projects/projects.component'
+import { ProjectCardComponent } from './components/projects/project-card/project-card.component'
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ProjectsComponent } from './components/projects/projects.component'
     IntersectionDirective,
     ValueComponent,
     ProjectsComponent,
+    ProjectCardComponent,
   ],
   imports: [BrowserModule, BrowserAnimationsModule],
   providers: [],
