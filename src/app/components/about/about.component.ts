@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { Skill, Value } from 'src/app/models/about'
 import { IntersectionDirective } from 'src/app/directives/intersection.directive'
 

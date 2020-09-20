@@ -1,12 +1,4 @@
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &__text {
-    font-size: 7rem;
-    margin-top: 6rem;
-  }
-}
+@import 'src/app/styles/theme.scss';
 
 .summary {
   display: flex;
@@ -42,7 +34,7 @@
   justify-content: center;
   width: 100%;
   flex-wrap: wrap;
-  background-color: #cdea65;
+  background-color: $background-color;
 
   &__item {
     margin: 4rem 5rem;
