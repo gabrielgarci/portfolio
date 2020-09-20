@@ -31,7 +31,7 @@
     "zone.js": "~0.10.2"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.900.3",
+    "@angular-devkit/build-angular": "^0.901.9",
     "@angular/cli": "~9.0.3",
     "@angular/compiler-cli": "~9.0.2",
     "@angular/language-service": "~9.0.2",
@@ -60,7 +60,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "pretty-quick --staged && ng lint",
-      "pre-push": "ng test --watch=false --browsers=FirefoxHeadless && ng build --prod"
+      "pre-push": "ng test --watch=false --browsers=ChromeHeadless && ng build --prod"
     }
   }
 }
