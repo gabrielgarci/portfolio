@@ -12,6 +12,18 @@ export class NavbarComponent {
 
   constructor(private eRef: ElementRef) {}
 
+  scrollToElement(section): void {
+    const element = document.querySelector(`#${section}`)
+    element.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    })
+    if (this.showMenu) {
+      this.showMenu = false
+    }
+  }
+
   @HostListener('document:mousedown', ['$event'])
   onGlobalClick(event): void {
     if (!this.eRef.nativeElement.contains(event.target)) {
