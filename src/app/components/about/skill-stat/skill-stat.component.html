@@ -1,0 +1,11 @@
+<div class="title">{{ item.name }}</div>
+<div class="bar">
+  <div
+    class="bar__score"
+    [ngStyle]="{
+      width: item.score + '%',
+      transition: 'all 0.5s ease ' + index * 0.2 + 's'
+    }"
+    [ngClass]="{ 'bar__score--loaded': loadStats }"
+  ></div>
+</div>

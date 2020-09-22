@@ -1,0 +1,49 @@
+@import 'src/app/styles/theme.scss';
+
+.colaboration-card {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem 2rem 2rem;
+    // width: 300px;
+    flex-grow: 3;
+    box-sizing: border-box;
+  }
+
+  &__title {
+    font-size: 3.5rem;
+    color: $main-text;
+  }
+
+  &__tags {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+
+  &__tag {
+    padding: 0.5rem 1rem;
+    background-color: $background-color;
+    border-radius: 50px;
+    margin: 0.5rem 1rem 0.5rem 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    color: $secondary-text;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    flex-grow: 7;
+    max-width: 700px;
+    box-sizing: border-box;
+  }
+}

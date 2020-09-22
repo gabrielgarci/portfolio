@@ -1,0 +1,76 @@
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 6.2rem);
+  color: white;
+  background: black url('/assets/img/cover-background.png') no-repeat;
+  background-size: cover;
+  padding: 0 4rem;
+
+  &__main {
+    font-size: 4.5rem;
+    opacity: 0;
+    animation: fade-in 0.5s linear 0.75s forwards;
+    text-align: center;
+
+    &--name {
+      color: rgb(249, 255, 63);
+    }
+  }
+
+  &__secondary {
+    font-size: 3rem;
+    margin-top: 3rem;
+    opacity: 0;
+    animation: fade-in 0.5s linear 1.5s forwards;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3rem;
+    padding: 1.5rem 2rem;
+    margin-top: 5rem;
+    cursor: pointer;
+    background: linear-gradient(
+      to right,
+      rgba(194, 255, 63, 0.5) 50%,
+      transparent 50%
+    );
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.4s ease;
+    opacity: 0;
+    animation: fade-in 0.5s linear 2.25s forwards;
+
+    &__text {
+      font-size: 1.8rem;
+    }
+
+    &__icon {
+      width: 2rem;
+      margin-left: 1rem;
+      transition: all 0.4s ease;
+    }
+
+    &:hover {
+      background-position: left bottom;
+      .title__btn__icon {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

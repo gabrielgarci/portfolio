@@ -1,0 +1,33 @@
+<div class="project-card">
+  <div class="project-card__info">
+    <div class="project-card__title">{{ item.name }}</div>
+    <div class="project-card__tags">
+      <div class="project-card__tag" *ngFor="let tag of item.tags">
+        {{ tag }}
+      </div>
+    </div>
+    <p class="project-card__description text">{{ item.description }}</p>
+    <p class="project-card__tech text">{{ item.tech }}</p>
+    <div class="project-card__btn-container">
+      <a
+        class="project-card__btn project-card__btn--repo"
+        [href]="sanitize(item.repo)"
+        target="_blank"
+      >
+        <img class="github-icon" src="/assets/icons/github.png" alt="repo" />
+        Repositorio
+      </a>
+      <a
+        class="project-card__btn"
+        [href]="sanitize(item.url)"
+        target="_blank"
+        *ngIf="item.name !== 'Portfolio'"
+      >
+        Visitar web
+      </a>
+    </div>
+  </div>
+  <div class="project-card__img-container">
+    <img class="project-card__img" src="{{ item.img }}" alt="project example" />
+  </div>
+</div>

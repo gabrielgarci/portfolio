@@ -1,0 +1,39 @@
+<div class="title">
+  <h1 class="title__text">About</h1>
+</div>
+<div class="summary">
+  <div class="summary__main">
+    <img class="summary__pic" src="/assets/img/portrait.png" alt="portrait" />
+    <p class="summary__text text">
+      Desarrolador Front-end en Minsait (Indra). <br />
+      Dpto. de Tecnologías Avanzadas.
+    </p>
+    <div class="summary__contacts">
+      <a
+        *ngFor="let contact of contacts"
+        href="{{ contact.url }}"
+        target="_blank"
+      >
+        <img src="{{ contact.icon }}" alt="icon" />
+      </a>
+    </div>
+  </div>
+  <div class="summary__stats" (intersection)="loadStats = true">
+    <app-skill-stat
+      class="skill"
+      *ngFor="let skill of skills; index as i"
+      [item]="skill"
+      [index]="i"
+      [loadStats]="loadStats"
+    ></app-skill-stat>
+  </div>
+</div>
+<div class="values" (intersection)="loadValues = true">
+  <app-value
+    class="values__item"
+    *ngFor="let value of values; index as i"
+    [ngClass]="{ 'values__item--loaded': loadValues }"
+    [ngStyle]="{ transition: 'all 0.5s ease ' + getDelay(i) + 's' }"
+    [item]="value"
+  ></app-value>
+</div>

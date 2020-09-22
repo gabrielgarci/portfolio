@@ -1,0 +1,28 @@
+.title {
+  width: 100px;
+  min-width: 80px;
+  padding: 0.75rem 0;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: rgb(158, 158, 158);
+  border-radius: 10px 0 0 10px;
+}
+
+.bar {
+  display: flex;
+  width: 100%;
+  background-color: rgb(219, 219, 219);
+  border-radius: 0 10px 10px 0;
+
+  &__score {
+    background: linear-gradient(to right, #c1e63b 50%, #ffffff00 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    &--loaded {
+      background-position: left bottom;
+    }
+  }
+}
