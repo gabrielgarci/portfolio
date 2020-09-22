@@ -14,12 +14,12 @@ export class AboutComponent {
 
   public contacts = [
     {
-      icon: '/assets/icons/linkedin.png',
+      icon: './assets/icons/linkedin.png',
       url: 'https://www.linkedin.com/in/gabrielgarci/',
     },
-    { icon: '/assets/icons/github.png', url: 'https://github.com/ggarciaro' },
+    { icon: './assets/icons/github.png', url: 'https://github.com/ggarciaro' },
     {
-      icon: '/assets/icons/codewar.png',
+      icon: './assets/icons/codewar.png',
       url: 'https://www.codewars.com/users/ggarciaro',
     },
   ]
@@ -36,23 +36,23 @@ export class AboutComponent {
   public values: Value[] = [
     {
       title: 'Responsive',
-      img: '/assets/icons/responsive.png',
+      img: './assets/icons/responsive.png',
       descript: 'Aplicaciones para todos los dispositivos y resoliciones.',
     },
     {
       title: 'Clean Code',
-      img: '/assets/icons/clean-code.png',
+      img: './assets/icons/clean-code.png',
       descript: 'Código limpio y buenas prácticas para trabajos colavorativos.',
     },
     {
       title: 'Fundamentos',
-      img: '/assets/icons/bases.png',
+      img: './assets/icons/bases.png',
       descript:
         'Conocimiento de las bases en las que se desarrollan los frameworks.',
     },
     {
       title: 'Rendimiento',
-      img: '/assets/icons/speed.png',
+      img: './assets/icons/speed.png',
       descript: 'Aplicaciones fluidas con bajos tiempos de carga.',
     },
   ]

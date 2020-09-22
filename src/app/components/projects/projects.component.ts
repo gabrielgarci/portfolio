@@ -39,7 +39,7 @@ export class ProjectsComponent implements OnInit {
         ' Aplicación web mobile-first desarrollada con react aplicando hooks. Base de datos sobre firebase y test unitarios con Jest. Metodologías BEM y Git-flow.',
       url: 'https://gabrielgarci.github.io/rick-and-morty-quiz/',
       repo: 'https://github.com/gabrielgarci/rick-and-morty-quiz',
-      img: '/assets/img/projects/rick-and-morty-quiz.png',
+      img: './assets/img/projects/rick-and-morty-quiz.png',
       tags: [
         'react',
         'mobile first',
@@ -58,7 +58,7 @@ export class ProjectsComponent implements OnInit {
         'Librería desarrollada en Angular y publicada en npmjs. Gestiona las peticiones HTTP, permitiendo mostrar un modal durante el tiempo de respuesta. Confirable tanto contenido a mostrar, https a interceptar o tiempos en los que actuar.',
       url: 'https://www.npmjs.com/package/ngx-interceptor',
       repo: 'https://github.com/gabrielgarci/ngx-interceptor',
-      img: '/assets/img/projects/npm.png',
+      img: './assets/img/projects/npm.png',
       tags: ['Angular', 'Libreria', 'npm', 'http-interceptor', 'Git-flow'],
     },
     {
@@ -69,7 +69,7 @@ export class ProjectsComponent implements OnInit {
         'Manipulación de Canvas mediante JS plano (Vanilla JavaScript). No se ha empleado librearías gráficas ni framework de ningún tipo. Para el despliegue del aplicativo se ha rezalido el bundler mediante Webpack.',
       url: 'https://gabrielgarci.github.io/canvas-snake/',
       repo: 'https://github.com/gabrielgarci/canvas-snake',
-      img: '/assets/img/projects/canvas-snake.png',
+      img: './assets/img/projects/canvas-snake.png',
       tags: ['Canvas', 'Vanilla JavaScript', 'Webpack', 'BEM', 'Git-flow'],
     },
     {
@@ -80,7 +80,7 @@ export class ProjectsComponent implements OnInit {
         'Aplicación web desarrollada en Angular. Interfaz sencilla con animaciones interactivas con el usuario mediante CSS y directivas y animaciones de Angular. Se han seguido las metodologías BEM para estilos y Git-flow en el control de versiones.',
       url: 'https://gabrielgarci.github.io/portfolio/',
       repo: 'https://github.com/gabrielgarci/portfolio',
-      img: '/assets/img/projects/portfolio.png',
+      img: './assets/img/projects/portfolio.png',
       tags: ['Angular', 'Directivas Angular', 'BEM', 'Git-flow'],
     },
   ]
