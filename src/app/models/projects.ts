@@ -3,6 +3,7 @@ export interface Project {
   url: string
   repo: string
   description: string
+  tech: string
   img: string
   tags: string[]
 }
