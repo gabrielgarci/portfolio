@@ -1,6 +1,7 @@
 import { Component } from '@angular/core'
 import { Skill, Value } from 'src/app/models/about'
 import { IntersectionDirective } from 'src/app/directives/intersection.directive'
+import { DomSanitizer } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-about',
@@ -11,13 +12,26 @@ export class AboutComponent {
   public loadStats = false
   public loadValues = false
 
+  public contacts = [
+    {
+      icon: '/assets/icons/linkedin.png',
+      url: 'https://www.linkedin.com/in/gabrielgarci/',
+    },
+    { icon: '/assets/icons/github.png', url: 'https://github.com/ggarciaro' },
+    {
+      icon: '/assets/icons/codewar.png',
+      url: 'https://www.codewars.com/users/ggarciaro',
+    },
+  ]
   public skills: Skill[] = [
     { name: 'CSS', score: 80 },
     { name: 'JS', score: 85 },
     { name: 'Angular', score: 80 },
-    { name: 'Ionic', score: 60 },
-    { name: 'SASS', score: 68 },
-    { name: 'Jasmin', score: 65 },
+    { name: 'React', score: 60 },
+    { name: 'Ionic', score: 65 },
+    { name: 'Jest', score: 65 },
+    { name: 'Canvas', score: 60 },
+    { name: 'Figma', score: 50 },
   ]
   public values: Value[] = [
     {
@@ -43,9 +57,13 @@ export class AboutComponent {
     },
   ]
 
-  constructor() {}
+  constructor(private sanitizer: DomSanitizer) {}
 
   public getDelay(index) {
     return window.innerHeight > 600 ? index * 0.4 : index * 0.4 + 1
+  }
+
+  public sanitize(url: string) {
+    return this.sanitizer.bypassSecurityTrustUrl(url)
   }
 }

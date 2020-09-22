@@ -77,7 +77,7 @@ export class ProjectsComponent implements OnInit {
       description:
         'Por último, pero no menos importante, este portfolio a modo de carte de presentación y como plataforma donde ir mostrando mis proyectos.',
       tech:
-        'Aplicación web desarrollada en Angular. Interfaz sencilla con animaciones interactivas con el usuario mediante CSS y directivas Angular. Se han seguido las metodologías BEM para estilos y Git-flow en el control de versiones.',
+        'Aplicación web desarrollada en Angular. Interfaz sencilla con animaciones interactivas con el usuario mediante CSS y directivas y animaciones de Angular. Se han seguido las metodologías BEM para estilos y Git-flow en el control de versiones.',
       url: 'https://gabrielgarci.github.io/portfolio/',
       repo: 'https://github.com/gabrielgarci/portfolio',
       img: '/assets/img/projects/portfolio.png',

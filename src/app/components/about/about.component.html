@@ -2,7 +2,22 @@
   <h1 class="title__text">About</h1>
 </div>
 <div class="summary">
-  <img class="summary__pic" src="/assets/img/portrait.png" alt="portrait" />
+  <div class="summary__main">
+    <img class="summary__pic" src="/assets/img/portrait.png" alt="portrait" />
+    <p class="summary__text text">
+      Desarrolador Front-end en Minsait (Indra). <br />
+      Dpto. de Tecnologías Avanzadas.
+    </p>
+    <div class="summary__contacts">
+      <a
+        *ngFor="let contact of contacts"
+        href="{{ contact.url }}"
+        target="_blank"
+      >
+        <img src="{{ contact.icon }}" alt="icon" />
+      </a>
+    </div>
+  </div>
   <div class="summary__stats" (intersection)="loadStats = true">
     <app-skill-stat
       class="skill"
