@@ -48,7 +48,10 @@
 }
 
 @media only screen and (max-width: 1025px) {
-  .colaboration-card__main {
-    max-width: none;
+  .colaboration-card {
+    &__main,
+    &__description {
+      max-width: none;
+    }
   }
 }
