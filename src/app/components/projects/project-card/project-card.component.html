@@ -11,7 +11,7 @@
     <div class="project-card__btn-container">
       <a
         class="project-card__btn project-card__btn--repo"
-        [href]="sanitize(item.repo)"
+        href="{{ item.repo }}"
         target="_blank"
       >
         <img class="github-icon" src="./assets/icons/github.png" alt="repo" />
@@ -19,7 +19,7 @@
       </a>
       <a
         class="project-card__btn"
-        [href]="sanitize(item.url)"
+        href="{{ item.url }}"
         target="_blank"
         *ngIf="item.name !== 'Portfolio'"
       >

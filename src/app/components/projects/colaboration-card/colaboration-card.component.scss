@@ -5,19 +5,19 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  padding: 2rem 1rem;
-  max-width: 1000px;
+  padding: 2rem 0;
+  max-width: 900px;
 
   &__main {
     display: flex;
     flex-direction: column;
     padding: 0 2rem 2rem 2rem;
-    max-width: 300px;
+    width: 250px;
     box-sizing: border-box;
   }
 
   &__title {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: $main-text;
   }
 
@@ -41,14 +41,18 @@
     display: flex;
     align-items: center;
     padding: 0 2rem;
-    flex-grow: 7;
-    max-width: 700px;
+    max-width: 650px;
     box-sizing: border-box;
   }
 }
 
-@media only screen and (max-width: 1025px) {
-  .colaboration-card__main {
-    max-width: none;
+@media only screen and (max-width: 1020px) {
+  .colaboration-card {
+    &__main {
+      width: auto;
+    }
+    &__description {
+      max-width: none;
+    }
   }
 }

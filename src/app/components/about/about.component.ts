@@ -1,7 +1,6 @@
 import { Component } from '@angular/core'
 import { Skill, Value } from 'src/app/models/about'
 import { IntersectionDirective } from 'src/app/directives/intersection.directive'
-import { DomSanitizer } from '@angular/platform-browser'
 
 @Component({
   selector: 'app-about',
@@ -57,13 +56,9 @@ export class AboutComponent {
     },
   ]
 
-  constructor(private sanitizer: DomSanitizer) {}
+  constructor() {}
 
   public getDelay(index) {
     return window.innerHeight > 600 ? index * 0.4 : index * 0.4 + 1
-  }
-
-  public sanitize(url: string) {
-    return this.sanitizer.bypassSecurityTrustUrl(url)
   }
 }
