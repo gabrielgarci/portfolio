@@ -3,10 +3,10 @@
 
 .summary {
   display: flex;
-  // align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 7rem;
+  margin: 0 auto 3rem auto;
+  max-width: 1000px;
 
   &__main {
     width: 300px;
@@ -34,15 +34,15 @@
       justify-content: center;
       align-items: center;
       padding: 0.5rem;
-      width: 55px;
-      height: 55px;
+      width: 45px;
+      height: 45px;
       img {
-        width: 50px;
-        height: 50px;
+        width: 40px;
+        height: 40px;
       }
       img:hover {
-        width: 55px;
-        height: 55px;
+        width: 45px;
+        height: 45px;
       }
     }
   }
@@ -54,7 +54,7 @@
     margin: 2rem auto 0 auto;
     padding: 0 3rem;
     width: 100%;
-    max-width: 500px;
+    max-width: 400px;
     min-width: 225px;
   }
 }
