@@ -36,12 +36,12 @@ export class AboutComponent {
     {
       title: 'Responsive',
       img: './assets/icons/responsive.png',
-      descript: 'Aplicaciones para todos los dispositivos y resoliciones.',
+      descript: 'Aplicaciones para todos los dispositivos y resoluciones.',
     },
     {
       title: 'Clean Code',
       img: './assets/icons/clean-code.png',
-      descript: 'Código limpio y buenas prácticas para trabajos colavorativos.',
+      descript: 'Código limpio y buenas prácticas para trabajos colaborativos.',
     },
     {
       title: 'Fundamentos',
