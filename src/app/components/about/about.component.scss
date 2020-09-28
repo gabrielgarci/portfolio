@@ -9,8 +9,12 @@
   max-width: 1000px;
 
   &__main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     width: 300px;
     margin: 0 auto;
+    padding: 0 2rem;
   }
 
   &__text {
@@ -19,7 +23,9 @@
   }
 
   &__pic {
-    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 100%;
   }
 
   &__contacts {

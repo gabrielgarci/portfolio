@@ -25,7 +25,7 @@ export class ProjectsComponent implements OnInit {
     {
       company: 'Inversis',
       description:
-        'Rediseño de la UI de aplicativo web (JSP): aplicación de estilos y animaciones mediante CSS y JS, diseño de iconos (figma) y control de versiones (CVS).',
+        'Rediseño de la UI de aplicativo web: aplicación de estilos y animaciones mediante CSS y JS, diseño de iconos (figma) y control de versiones (CVS).',
       tags: ['CSS', 'JS', 'Figma', 'CSV', 'JSP'],
     },
   ]
@@ -55,7 +55,7 @@ export class ProjectsComponent implements OnInit {
       description:
         'Añade un interceptor de solicitudes HTTP a tu proyecto Angular con un solo paquete. Altamente configurable para poder ajustarse a las necesidades del aplicativo.',
       tech:
-        'Librería desarrollada en Angular y publicada en npmjs. Gestiona las peticiones HTTP, permitiendo mostrar un modal durante el tiempo de respuesta. Confirable tanto contenido a mostrar, https a interceptar o tiempos en los que actuar.',
+        'Librería desarrollada en Angular y publicada en npmjs. Gestiona las peticiones HTTP, permitiendo mostrar un modal durante el tiempo de respuesta. Confirable tanto en contenido a mostrar, https a interceptar o tiempos en los que actuar.',
       url: 'https://www.npmjs.com/package/ngx-interceptor',
       repo: 'https://github.com/gabrielgarci/ngx-interceptor',
       img: './assets/img/projects/npm.png',
@@ -64,7 +64,7 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Canvas-snake',
       description:
-        'Proyecto minimalista donde se crea de cero (código original) el clásico juego de arcade Snake. Se ha otorgado distinta interfaz dependiendo del tipo de disposito desde el que se use.',
+        'Proyecto minimalista donde se crea de cero (código original) el clásico juego de arcade Snake. Se ha otorgado distinta interfaz dependiendo si se trata de un dispositivo táctil.',
       tech:
         'Manipulación de Canvas mediante JS plano (Vanilla JavaScript). No se ha empleado librearías gráficas ni framework de ningún tipo. Para el despliegue del aplicativo se ha rezalido el bundler mediante Webpack.',
       url: 'https://gabrielgarci.github.io/canvas-snake/',
@@ -75,9 +75,9 @@ export class ProjectsComponent implements OnInit {
     {
       name: 'Portfolio',
       description:
-        'Por último, pero no menos importante, este portfolio a modo de carte de presentación y como plataforma donde ir mostrando mis proyectos.',
+        'Por último, este portfolio a modo de carta de presentación y plataforma donde ir mostrando proyectos y colaboraciones.',
       tech:
-        'Aplicación web desarrollada en Angular. Interfaz sencilla con animaciones interactivas con el usuario mediante CSS y directivas y animaciones de Angular. Se han seguido las metodologías BEM para estilos y Git-flow en el control de versiones.',
+        'Aplicación web desarrollada en Angular. Interfaz sencilla con animaciones interactivas con el usuario mediante CSS y directivas y animaciones Angular. Se han seguido las metodologías BEM para estilos y Git-flow en el control de versiones.',
       url: 'https://gabrielgarci.github.io/portfolio/',
       repo: 'https://github.com/gabrielgarci/portfolio',
       img: './assets/img/projects/portfolio.png',
