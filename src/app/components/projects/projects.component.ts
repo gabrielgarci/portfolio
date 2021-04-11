@@ -9,6 +9,21 @@ import { Colaboration, Project } from 'src/app/models/projects'
 export class ProjectsComponent implements OnInit {
   public colaborations: Colaboration[] = [
     {
+      company: 'Indra',
+      description:
+        'Desarrollo de librería Angular de componentes reutilizables para aplicaciones internas basada en observables. Patrón de desarrollo Redux, control de versiones mediante Git (GitFlow) y maquetación empleando SASS (metodología BEM).',
+      tags: [
+        'Angular',
+        'Redux',
+        'Ngrx',
+        'Git',
+        'Git-flow',
+        'BEM',
+        'SASS',
+        'Library',
+      ],
+    },
+    {
       company: 'Telefónica',
       description:
         'Desarrollo de librería Angular destinada a la gestión de material desde dispositivos móviles: escaneo de artículos (ngx-scanner), desarrollo de test unitarios (Jest), control de version con metodología Git-Flow y aplicación de estilos mediante preprocesador de CSS SASS y metodología BEM.',
@@ -26,7 +41,7 @@ export class ProjectsComponent implements OnInit {
       company: 'Inversis',
       description:
         'Rediseño de la UI de aplicativo web: aplicación de estilos y animaciones mediante CSS y JS, diseño de iconos (figma) y control de versiones (CVS).',
-      tags: ['CSS', 'JS', 'Figma', 'CSV', 'JSP'],
+      tags: ['CSS', 'JS', 'Figma', 'CSV'],
     },
   ]
 
