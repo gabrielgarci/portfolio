@@ -16,7 +16,10 @@ export class AboutComponent {
       icon: './assets/icons/linkedin.png',
       url: 'https://www.linkedin.com/in/gabrielgarci/',
     },
-    { icon: './assets/icons/github.png', url: 'https://github.com/ggarciaro' },
+    {
+      icon: './assets/icons/github.png',
+      url: 'https://github.com/gabrielgarci',
+    },
     {
       icon: './assets/icons/codewar.png',
       url: 'https://www.codewars.com/users/ggarciaro',
